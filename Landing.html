@@ -37,15 +37,32 @@
 		.container img {
 			width: 100%;
 			height: auto;
+			position: relative;
 		}
 		.container h3 {
 			margin-top: 20px;
 			margin-bottom: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-shadow: 2px 2px 4px #000000;
+			z-index: 2;
 		}
 		.container p {
 			font-size: 18px;
 			line-height: 1.5;
 			margin-bottom: 20px;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-shadow: 2px 2px 4px #000000;
+			z-index: 2;
+			background-color: rgba(0, 0, 0, 0.5);
+			padding: 10px;
 		}
 	</style>
 </head>
@@ -61,7 +78,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="https://i.imgur.com/1JzjvZM.jpg" alt="Image 1">
+				<img src="https://images7.alphacoders.com/675/675855.jpg" alt="Image 1">
 				<h3>Our Company Values</h3>
 				<p>We are committed to providing high-quality aviation themed goods to our customers. Our products are designed to meet the needs of aviation enthusiasts and professionals alike.</p>
 			</div>
@@ -84,22 +101,4 @@
 			</div>
 		</div>
 	</div>
-	<!-- Add the JS script to govern the scrolling effect -->
-	<script>
-		$(document).ready(function(){
-			// Add smooth scrolling to all links
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function(){
-						window.location.hash = hash;
-					});
-				}
-			});
-		});
-	</script>
-</body>
-</html>
+	<!-- Add the JS script to govern the scrolling effect
