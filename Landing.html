@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aviation Themed Goods</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		/* Add styles for the navigation bar */
+		.navbar {
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		.navbar a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		/* Add styles for the images and text boxes */
+		.container {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.container h3 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.container p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Add the navigation bar -->
+	<nav class="navbar navbar-expand-sm">
+		<a href="#">Home</a>
+		<a href="#">Products</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact Us</a>
+	</nav>
+	<!-- Add the images and text boxes -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="https://i.imgur.com/1JzjvZM.jpg" alt="Image 1">
+				<h3>Our Company Values</h3>
+				<p>We are committed to providing high-quality aviation themed goods to our customers. Our products are designed to meet the needs of aviation enthusiasts and professionals alike.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="https://i.imgur.com/1JzjvZM.jpg" alt="Image 2">
+				<h3>Our Products</h3>
+				<p>We offer a wide range of aviation themed goods, including clothing, accessories, and home decor. Our products are made from high-quality materials and are designed to last.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="https://i.imgur.com/1JzjvZM.jpg" alt="Image 3">
+				<h3>Our Style</h3>
+				<p>Our products are designed to be stylish and functional. We believe that aviation enthusiasts should be able to express their passion through their clothing and accessories.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="https://i.imgur.com/1JzjvZM.jpg" alt="Image 4">
+				<h3>Our Mission</h3>
+				<p>Our mission is to provide aviation enthusiasts with high-quality products that reflect their passion for aviation. We are committed to delivering exceptional customer service and ensuring that our customers are satisfied with their purchases.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Add the JS script to govern the scrolling effect -->
+	<script>
+		$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>
